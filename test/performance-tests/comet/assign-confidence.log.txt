@@ -1,0 +1,19 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 14:17:35 MSK 2019
+COMMAND LINE: ../../src/crux assign-confidence --output-dir comet --score e-value comet/comet.target.txt
+INFO: Beginning assign-confidence.
+INFO: Estimation method = tdc.
+INFO: Assigning index 0 to comet/comet.target.txt.
+INFO: Found 71490 PSMs in comet/comet.target.txt.
+INFO: Score type=evalue_score, sorting in ascending order
+INFO: Skipped 29291 target and 27901 decoy PSMs with rank > 1.
+INFO: There are 8708 target and 5590 decoy PSMs for q-value computation.
+INFO: Number of PSMs at 1% FDR = 2292.
+INFO: Number of PSMs at 5% FDR = 2631.
+INFO: Number of PSMs at 10% FDR = 2931.
+WARNING: Missing nterm flanking for protein:F09E5.15b offset:4
+WARNING: Missing cterm flanking aa for protein:F09E5.15b offset:4
+INFO: Elapsed time: 1.27 s
+INFO: Finished crux assign-confidence.
+INFO: Return Code:0

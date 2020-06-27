@@ -1,0 +1,73 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 14:00:48 MSK 2019
+COMMAND LINE: ../../src/crux percolator --output-dir tide-p-value tide-p-value/tide-search.txt
+INFO: Beginning percolator.
+INFO: Converting input to pin format.
+INFO: Parsing tide-p-value/tide-search.txt
+INFO: Assigning index 0 to 051708-worm-ASMS-10.ms2.
+INFO: There are 38069 target matches and 33421 decoys
+INFO: Maximum observed charge is 3.
+INFO: File conversion complete.
+INFO: Percolator version 3.04.nightly-2-48b5424-dirty, Build Date Dec  9 2019 16:36:24
+INFO: Copyright (c) 2006-9 University of Washington. All rights reserved.
+INFO: Written by Lukas Käll (lukall@u.washington.edu) in the
+INFO: Department of Genome Sciences at the University of Washington.
+INFO: Issued command:
+INFO: percolator --results-peptides tide-p-value/percolator.target.peptides.txt --decoy-results-peptides tide-p-value/percolator.decoy.peptides.txt --results-psms tide-p-value/percolator.target.psms.txt --decoy-results-psms tide-p-value/percolator.decoy.psms.txt --verbose 2 --protein-decoy-pattern decoy_ --seed 1 --subset-max-train 0 --trainFDR 0.01 --testFDR 0.01 --maxiter 10 --search-input auto --no-schema-validation --protein-enzyme trypsin --post-processing-tdc tide-p-value/make-pin.pin
+INFO: Started Wed Dec 11 14:00:51 2019
+INFO: Hyperparameters: selectionFdr=0.01, Cpos=0, Cneg=0, maxNiter=10
+INFO: Reading tab-delimited input from datafile tide-p-value/make-pin.pin
+INFO: Features:
+INFO: lnrSp deltLCn deltCn Sp IonFrac RefactoredXCorr NegLog10PValue PepLen Charge1 Charge2 Charge3 enzN enzC enzInt lnNumDSP dM absdM 
+INFO: Found 71490 PSMs
+INFO: Separate target and decoy search inputs detected, using target-decoy competition on Percolator scores.
+INFO: Train/test set contains 38069 positives and 33421 negatives, size ratio=1.13907 and pi0=1
+INFO: Selecting Cpos by cross-validation.
+INFO: Selecting Cneg by cross-validation.
+INFO: Split 1:	Selected feature 7 as initial direction. Could separate 1490 training set positives with q<0.01 in that direction.
+INFO: Split 2:	Selected feature 7 as initial direction. Could separate 1437 training set positives with q<0.01 in that direction.
+INFO: Split 3:	Selected feature 7 as initial direction. Could separate 1363 training set positives with q<0.01 in that direction.
+INFO: Found 2106 test set positives with q<0.01 in initial direction
+INFO: Reading in data and feature calculation took 3.02031 cpu seconds or 3 seconds wall clock time.
+INFO: ---Training with Cpos selected by cross validation, Cneg selected by cross validation, initial_fdr=0.01, fdr=0.01
+INFO: Iteration 1:	Estimated 2447 PSMs with q<0.01
+INFO: Iteration 2:	Estimated 2504 PSMs with q<0.01
+INFO: Iteration 3:	Estimated 2522 PSMs with q<0.01
+INFO: Iteration 4:	Estimated 2536 PSMs with q<0.01
+INFO: Iteration 5:	Estimated 2547 PSMs with q<0.01
+INFO: Iteration 6:	Estimated 2544 PSMs with q<0.01
+INFO: Iteration 7:	Estimated 2549 PSMs with q<0.01
+INFO: Iteration 8:	Estimated 2553 PSMs with q<0.01
+INFO: Iteration 9:	Estimated 2563 PSMs with q<0.01
+INFO: Iteration 10:	Estimated 2560 PSMs with q<0.01
+INFO: Learned normalized SVM weights for the 3 cross-validation splits:
+INFO:  Split1	 Split2	 Split3	FeatureName
+INFO: -0.3739	-1.9858	-0.9657	lnrSp
+INFO:  0.1650	 1.1080	-0.1397	deltLCn
+INFO:  0.5169	 0.7837	 0.4960	deltCn
+INFO: -0.0656	-0.3256	 0.0451	Sp
+INFO:  0.2606	 0.7719	 0.0908	IonFrac
+INFO:  0.5062	 1.0476	 0.7288	RefactoredXCorr
+INFO: -0.0600	-0.3927	 0.3363	NegLog10PValue
+INFO:  0.2946	 1.2294	 0.8511	PepLen
+INFO:  0.1154	 0.1468	 0.1672	Charge1
+INFO:  0.1620	 0.5076	 0.2556	Charge2
+INFO: -0.1863	-0.5385	-0.2908	Charge3
+INFO:  0.0729	 0.1243	 0.1156	enzN
+INFO:  0.0000	 0.0000	 0.0000	enzC
+INFO: -0.0743	-0.0166	-0.1583	enzInt
+INFO:  0.1227	 0.5971	 0.6921	lnNumDSP
+INFO: -0.1788	-0.3422	-0.2659	dM
+INFO: -0.3585	-1.4312	-0.9532	absdM
+INFO: -3.0514	-8.1045	-4.9323	m0
+INFO: Found 2477 test set PSMs with q<0.01.
+INFO: Selected best-scoring PSM per scan+expMass (target-decoy competition): 8874 target PSMs and 5424 decoy PSMs.
+INFO: Tossing out "redundant" PSMs keeping only the best scoring PSM for each unique peptide.
+INFO: Calculating q values.
+INFO: Final list yields 1437 target peptides with q<0.01.
+INFO: Calculating posterior error probabilities (PEPs).
+INFO: Processing took 55.65 cpu seconds or 33 seconds wall clock time.
+INFO: Elapsed time: 39.5 s
+INFO: Finished crux percolator.
+INFO: Return Code:0

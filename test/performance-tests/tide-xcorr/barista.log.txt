@@ -1,0 +1,46 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 13:56:27 MSK 2019
+COMMAND LINE: ../../src/crux barista --decoy-prefix decoy_ --output-dir tide-xcorr targets-and-decoys.fasta 051708-worm-ASMS-10.ms2 tide-xcorr/tide-search.txt
+INFO: Beginning barista.
+INFO: database source: targets-and-decoys.fasta
+INFO: sqt source: tide-xcorr/tide-search.txt
+INFO: ms2 source: 051708-worm-ASMS-10.ms2
+INFO: output_directory: tide-xcorr
+INFO: enzyme: trypsin
+INFO: decoy prefix: decoy_
+INFO: digesting database targets-and-decoys.fasta
+INFO: parsing files:
+INFO: reading file 051708-worm-ASMS-10.ms2
+INFO: parsing file tide-xcorr/tide-search.txt
+INFO: PSM number 0
+INFO: PSM number 5000
+INFO: PSM number 10000
+INFO: PSM number 15000
+INFO: PSM number 20000
+INFO: PSM number 25000
+INFO: PSM number 30000
+INFO: PSM number 35000
+INFO: PSM number 40000
+INFO: PSM number 45000
+INFO: PSM number 50000
+INFO: Number of spectra: 26170
+INFO: Number of PSMs: total 53783 positives 28894 negatives 24889
+INFO: Number of peptides: total 46710 positives 24493 negatives 22217
+INFO: Number of proteins: total 26195 positives 14593 negatives 11602
+INFO: loading and normalizing data
+INFO: trainset size 26195
+INFO: q<0.01: max non-parsimonious so far 484
+INFO: q<0.01: max non-parsimonious so far 549
+INFO: q<0.01: max non-parsimonious so far 620
+INFO: q<0.01: max non-parsimonious so far 642
+INFO: q<0.01: max non-parsimonious so far 690
+INFO: q<0.01: max non-parsimonious so far 699
+INFO: q<0.01: max non-parsimonious so far 715
+INFO: finished training, making parsimonious protein set
+INFO: total proteins parsimonious at q<0.01: 385
+INFO: peptides at q<0.01: 1357
+INFO: psms at q<0.01: 2301
+INFO: Elapsed time: 84.4 s
+INFO: Finished crux barista.
+INFO: Return Code:0

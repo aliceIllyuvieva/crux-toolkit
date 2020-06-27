@@ -35,6 +35,11 @@ class Spectrum {
   // Manual instantiation and specification
   Spectrum(int spectrum_number, double precursor_m_z)
     : spectrum_number_(spectrum_number), precursor_m_z_(precursor_m_z) {
+
+      best_score_ = -100000.0;                                      //added by Alice
+      q_value_ = -1.0;                                              //added by Alice
+      target_ = false;                                              //added by Alice
+
   }
   void ReservePeaks(int num) {
     peak_m_z_.reserve(num);
@@ -90,6 +95,15 @@ class Spectrum {
 
   int MaxCharge() const;
   double MaxPeakInRange( double min_range, double max_range ) const;
+
+  const double GetBestScore(){ return best_score_; }                                     //added by Alice
+  const void SetBestScore(double new_best_score){ best_score_ = new_best_score; }        //added by Alice
+
+  double GetQValue(){ return q_value_; }                                                 //added by Alice
+  void SetQValue(double new_q_value){ q_value_ = new_q_value; }                          //added by Alice
+
+  bool GetTarget(){ return target_; }                                                    //added by Alice
+  void SetTarget(bool new_target){ target_ = new_target; }                               //added by Alice
   
  private:
   int spectrum_number_;
@@ -98,7 +112,11 @@ class Spectrum {
   vector<int> charge_states_;
 
   vector<double> peak_m_z_;
-  vector<double> peak_intensity_;
+  vector<double> peak_intensity_;     
+  double best_score_;                                                                    //added by Alice
+  double q_value_;                                                                       //added by Alice
+  bool target_;                                                                          //added by Alice
+
 };
 
 class SpectrumCollection {
@@ -125,6 +143,7 @@ class SpectrumCollection {
     double neutral_mass;
     int charge;
     Spectrum* spectrum;
+   
     int spectrum_index;
 
     SpecCharge(double neutral_mass_param, int charge_param,
@@ -141,11 +160,14 @@ class SpectrumCollection {
   const vector<SpecCharge>* SpecCharges() const { return &spec_charges_; }
   vector<Spectrum*>* Spectra() { return &spectra_; }
 
+  vector<SpecCharge> spec_charges_;        //added by Alice
+
+
  private:
   void MakeSpecCharges();
 
   vector<Spectrum*> spectra_;
-  vector<SpecCharge> spec_charges_;
+  
 };
 
 #endif // SPECTRUM_COLLECTION_H

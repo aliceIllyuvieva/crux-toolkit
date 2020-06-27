@@ -1,0 +1,31 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 13:55:06 MSK 2019
+COMMAND LINE: ../../src/crux tide-index --output-dir worm+contaminants --parameter-file crux.param worm+contaminants.fa worm+contaminants
+INFO: Beginning tide-index.
+INFO: Running tide-index...
+WARNING: The output directory 'worm+contaminants' already exists.
+Existing files will be overwritten.
+INFO: Reading worm+contaminants.fa and computing unmodified peptides...
+INFO: Generated 584624 targets, including duplicates.
+INFO: Failed to generate decoys for 232 low complexity peptides.
+INFO: Generated 452303 decoys.
+INFO: Writing decoy fasta...
+INFO: Generating 1 decoy per target
+INFO: Reading proteins
+INFO: Wrote 100000 peptides
+INFO: Wrote 200000 peptides
+INFO: Wrote 300000 peptides
+INFO: Wrote 400000 peptides
+INFO: Wrote 500000 peptides
+INFO: Wrote 600000 peptides
+INFO: Wrote 700000 peptides
+INFO: Wrote 800000 peptides
+INFO: Wrote 900000 peptides
+INFO: Skipped 132089 duplicate targets and 143 duplicate decoys.
+INFO: Wrote 452535 targets and 452160 decoys.
+INFO: Writing peptide lists...
+INFO: Precomputing theoretical spectra...
+INFO: Elapsed time: 10 s
+INFO: Finished crux tide-index.
+INFO: Return Code:0

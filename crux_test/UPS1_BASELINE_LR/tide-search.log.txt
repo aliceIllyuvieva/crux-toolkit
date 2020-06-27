@@ -1,0 +1,27 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-c0cfc4de
+INFO: Сб июн 27 23:10:14 MSK 2020
+COMMAND LINE: /home/alice/crux-toolkit/src/crux tide-search --precursor-window 100 --precursor-window-type ppm --top-match 1 --concat T --overwrite T --num-threads 1 --use-neutral-loss-peaks F --min-peaks 10 --max-precursor-charge 9 --mz-bin-width 1.0005079 --mz-bin-offset 0.4 --use-flanking-peaks F --output-dir /home/alice/crux-toolkit/crux_test/UPS1_BASELINE_LR /home/data/mass_spec_data/UPS1.recalre.mzML /home/alice/crux-toolkit/crux_test/UPS1_IDX
+INFO: Beginning tide-search.
+INFO: Running tide-search...
+INFO: Number of Threads: 1
+INFO: Reading index /home/alice/crux-toolkit/crux_test/UPS1_IDX
+INFO: Read 455 target proteins
+WARNING: The file '/home/alice/crux-toolkit/crux_test/UPS1_BASELINE_LR/tide-search.txt' already exists and will be overwritten.
+INFO: Converting /home/data/mass_spec_data/UPS1.recalre.mzML to spectrumrecords format
+INFO: Elapsed time starting conversion: 0.035 s
+INFO: Parser could not determine scan numbers for this file, using ordinal numbers as scan numbers.
+WARNING: Proteowizard parser could not determine scan numbers for this file. Assigning new scan numbers.
+INFO: Reading spectrum file /home/alice/crux-toolkit/crux_test/UPS1_BASELINE_LR/UPS1.recalre.mzML.spectrumrecords.tmp.
+INFO: Read 3368 spectra.
+INFO: Starting search.
+INFO: 1000 spectrum-charge combinations searched, 30% complete
+INFO: 2000 spectrum-charge combinations searched, 59% complete
+INFO: 3000 spectrum-charge combinations searched, 89% complete
+INFO: [Thread 0]: Deleted 0 precursor, 0 isotope and 0 out-of-range peaks.
+INFO: [Thread 0]: Retained 100% of peaks.
+INFO: Time per spectrum-charge combination: 0.000888 s.
+INFO: Average number of candidates per spectrum-charge combination: 8.069477 
+INFO: Elapsed time: 3.04 s
+INFO: Finished crux tide-search.
+INFO: Return Code:0

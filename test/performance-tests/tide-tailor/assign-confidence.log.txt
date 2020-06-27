@@ -1,0 +1,18 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 14:54:20 MSK 2019
+COMMAND LINE: ../../src/crux assign-confidence --output-dir tide-tailor tide-tailor/tide-search.txt
+INFO: Beginning assign-confidence.
+INFO: Estimation method = tdc.
+INFO: Assigning index 0 to 051708-worm-ASMS-10.ms2.
+INFO: Found 71490 PSMs in tide-tailor/tide-search.txt.
+INFO: Automatically detected score type: tailor score
+INFO: Score type=tailor score, sorting in descending order
+INFO: Skipped 29284 target and 27908 decoy PSMs with rank > 1.
+INFO: There are 8710 target and 5588 decoy PSMs for q-value computation.
+INFO: Number of PSMs at 1% FDR = 2311.
+INFO: Number of PSMs at 5% FDR = 2635.
+INFO: Number of PSMs at 10% FDR = 2946.
+INFO: Elapsed time: 1.37 s
+INFO: Finished crux assign-confidence.
+INFO: Return Code:0

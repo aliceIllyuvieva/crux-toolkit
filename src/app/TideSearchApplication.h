@@ -92,6 +92,9 @@ private:
   vector<int> getNegativeIsotopeErrors() const;
   vector<InputFile> getInputFiles(const vector<string>& filepaths) const;
   static SpectrumCollection* loadSpectra(const std::string& file);
+  
+  
+
 
   /**
    * Function that contains the search algorithm and performs the search
@@ -178,6 +181,20 @@ private:
     }
     double precursor_window_;
   };
+  
+  
+  
+  struct ScSortByBestScore {	  //added by Alice
+	       explicit ScSortByBestScore (){}
+      bool operator() (const SpectrumCollection::SpecCharge x,
+                     const SpectrumCollection::SpecCharge y){
+
+              return(x.spectrum->GetBestScore() > y.spectrum->GetBestScore());
+
+     }
+  }; 
+
+
   double bin_width_;
   double bin_offset_;
 
@@ -189,6 +206,7 @@ private:
   std::map<std::string, SpectrumCollection*> spectra_;
 
  public:
+  void CalculateQValuesTDC(SpectrumCollection* spectra);                       //added by Alice
 
   // See TideSearchApplication.cpp for descriptions of these two constants
   static const double XCORR_SCALING;
@@ -199,7 +217,8 @@ private:
   /**
    * Constructor
    */
-  TideSearchApplication();
+   TideSearchApplication();
+
 
   /**
    * Destructor

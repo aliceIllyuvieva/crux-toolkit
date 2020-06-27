@@ -1,0 +1,17 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 14:14:47 MSK 2019
+COMMAND LINE: ../../src/crux assign-confidence --output-dir tide-res-ev --score res-ev p-value tide-res-ev/tide-search.txt
+INFO: Beginning assign-confidence.
+INFO: Estimation method = tdc.
+INFO: Assigning index 0 to 051708-worm-ASMS-10.ms2.
+INFO: Found 71490 PSMs in tide-res-ev/tide-search.txt.
+INFO: Score type=res-ev p-value, sorting in ascending order
+INFO: Skipped 28787 target and 28405 decoy PSMs with rank > 1.
+INFO: There are 7479 target and 6819 decoy PSMs for q-value computation.
+INFO: Number of PSMs at 1% FDR = 105.
+INFO: Number of PSMs at 5% FDR = 109.
+INFO: Number of PSMs at 10% FDR = 149.
+INFO: Elapsed time: 1.49 s
+INFO: Finished crux assign-confidence.
+INFO: Return Code:0

@@ -1,0 +1,45 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 14:18:36 MSK 2019
+COMMAND LINE: ../../src/crux barista --decoy-prefix decoy_ --output-dir comet targets-and-decoys.fasta 051708-worm-ASMS-10.ms2 comet/comet.target.txt
+INFO: Beginning barista.
+INFO: database source: targets-and-decoys.fasta
+INFO: sqt source: comet/comet.target.txt
+INFO: ms2 source: 051708-worm-ASMS-10.ms2
+INFO: output_directory: comet
+INFO: enzyme: trypsin
+INFO: decoy prefix: decoy_
+INFO: digesting database targets-and-decoys.fasta
+INFO: parsing files:
+INFO: reading file 051708-worm-ASMS-10.ms2
+INFO: parsing file comet/comet.target.txt
+INFO: PSM number 0
+INFO: PSM number 5000
+INFO: PSM number 10000
+INFO: PSM number 15000
+INFO: PSM number 20000
+INFO: PSM number 25000
+INFO: PSM number 30000
+INFO: PSM number 35000
+INFO: PSM number 40000
+INFO: Number of spectra: 14298
+INFO: Number of PSMs: total 42894 positives 23536 negatives 19358
+INFO: Number of peptides: total 37636 positives 20073 negatives 17563
+INFO: Number of proteins: total 25544 positives 13138 negatives 12406
+INFO: loading and normalizing data
+INFO: trainset size 25544
+INFO: q<0.01: max non-parsimonious so far 524
+INFO: q<0.01: max non-parsimonious so far 611
+INFO: q<0.01: max non-parsimonious so far 639
+INFO: q<0.01: max non-parsimonious so far 642
+INFO: q<0.01: max non-parsimonious so far 657
+INFO: q<0.01: max non-parsimonious so far 672
+INFO: q<0.01: max non-parsimonious so far 706
+INFO: q<0.01: max non-parsimonious so far 793
+INFO: finished training, making parsimonious protein set
+INFO: total proteins parsimonious at q<0.01: 425
+INFO: peptides at q<0.01: 1428
+INFO: psms at q<0.01: 2412
+INFO: Elapsed time: 77.8 s
+INFO: Finished crux barista.
+INFO: Return Code:0

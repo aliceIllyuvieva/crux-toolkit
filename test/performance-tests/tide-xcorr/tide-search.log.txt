@@ -1,0 +1,73 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-f7929bac
+INFO: Ср дек 11 13:55:16 MSK 2019
+COMMAND LINE: ../../src/crux tide-search --output-dir tide-xcorr --parameter-file crux.param 051708-worm-ASMS-10.ms2 worm+contaminants
+INFO: Beginning tide-search.
+INFO: Running tide-search...
+INFO: Number of Threads: 20
+INFO: Reading index worm+contaminants
+INFO: Read 23932 target proteins
+INFO: Converting 051708-worm-ASMS-10.ms2 to spectrumrecords format
+INFO: Elapsed time starting conversion: 0.329 s
+INFO: Reading spectrum file tide-xcorr/051708-worm-ASMS-10.ms2.spectrumrecords.tmp.
+INFO: Read 14298 spectra.
+INFO: Starting search.
+INFO: 1000 spectrum-charge combinations searched, 7% complete
+INFO: 2000 spectrum-charge combinations searched, 14% complete
+INFO: 3000 spectrum-charge combinations searched, 21% complete
+INFO: 4000 spectrum-charge combinations searched, 28% complete
+INFO: 5000 spectrum-charge combinations searched, 35% complete
+INFO: 6000 spectrum-charge combinations searched, 42% complete
+INFO: 7000 spectrum-charge combinations searched, 49% complete
+INFO: 8000 spectrum-charge combinations searched, 56% complete
+INFO: 9000 spectrum-charge combinations searched, 63% complete
+INFO: 10000 spectrum-charge combinations searched, 70% complete
+INFO: 11000 spectrum-charge combinations searched, 77% complete
+INFO: 12000 spectrum-charge combinations searched, 84% complete
+INFO: 13000 spectrum-charge combinations searched, 91% complete
+INFO: 14000 spectrum-charge combinations searched, 98% complete
+INFO: [Thread 19]: Deleted 6429 precursor, 0 isotope and 6040 out-of-range peaks.
+INFO: [Thread 19]: Retained 94.168% of peaks.
+INFO: [Thread 8]: Deleted 6514 precursor, 0 isotope and 5986 out-of-range peaks.
+INFO: [Thread 8]: Retained 94.2335% of peaks.
+INFO: [Thread 0]: Deleted 6582 precursor, 0 isotope and 6921 out-of-range peaks.
+INFO: [Thread 0]: Retained 93.8204% of peaks.
+INFO: [Thread 11]: Deleted 6606 precursor, 0 isotope and 6454 out-of-range peaks.
+INFO: [Thread 11]: Retained 94.0364% of peaks.
+INFO: [Thread 9]: Deleted 6501 precursor, 0 isotope and 5532 out-of-range peaks.
+INFO: [Thread 9]: Retained 94.3323% of peaks.
+INFO: [Thread 18]: Deleted 6624 precursor, 0 isotope and 7043 out-of-range peaks.
+INFO: [Thread 18]: Retained 93.7904% of peaks.
+INFO: [Thread 17]: Deleted 6635 precursor, 0 isotope and 6176 out-of-range peaks.
+INFO: [Thread 17]: Retained 94.0275% of peaks.
+INFO: [Thread 6]: Deleted 6504 precursor, 0 isotope and 6769 out-of-range peaks.
+INFO: [Thread 6]: Retained 93.6739% of peaks.
+INFO: [Thread 7]: Deleted 6509 precursor, 0 isotope and 6095 out-of-range peaks.
+INFO: [Thread 7]: Retained 94.2066% of peaks.
+INFO: [Thread 14]: Deleted 6866 precursor, 0 isotope and 5938 out-of-range peaks.
+INFO: [Thread 14]: Retained 94.3224% of peaks.
+INFO: [Thread 3]: Deleted 6637 precursor, 0 isotope and 5742 out-of-range peaks.
+INFO: [Thread 3]: Retained 94.1912% of peaks.
+INFO: [Thread 4]: Deleted 6594 precursor, 0 isotope and 6727 out-of-range peaks.
+INFO: [Thread 4]: Retained 93.8788% of peaks.
+INFO: [Thread 13]: Deleted 6453 precursor, 0 isotope and 6655 out-of-range peaks.
+INFO: [Thread 13]: Retained 93.8064% of peaks.
+INFO: [Thread 10]: Deleted 6481 precursor, 0 isotope and 6004 out-of-range peaks.
+INFO: [Thread 10]: Retained 94.0998% of peaks.
+INFO: [Thread 16]: Deleted 6724 precursor, 0 isotope and 6684 out-of-range peaks.
+INFO: [Thread 16]: Retained 94.0101% of peaks.
+INFO: [Thread 12]: Deleted 6573 precursor, 0 isotope and 6772 out-of-range peaks.
+INFO: [Thread 12]: Retained 93.7433% of peaks.
+INFO: [Thread 5]: Deleted 6657 precursor, 0 isotope and 6367 out-of-range peaks.
+INFO: [Thread 5]: Retained 94.052% of peaks.
+INFO: [Thread 2]: Deleted 6575 precursor, 0 isotope and 6982 out-of-range peaks.
+INFO: [Thread 2]: Retained 93.7958% of peaks.
+INFO: [Thread 1]: Deleted 6694 precursor, 0 isotope and 6690 out-of-range peaks.
+INFO: [Thread 1]: Retained 94.0239% of peaks.
+INFO: [Thread 15]: Deleted 6478 precursor, 0 isotope and 5319 out-of-range peaks.
+INFO: [Thread 15]: Retained 94.4606% of peaks.
+INFO: Time per spectrum-charge combination: 0.000574 s.
+INFO: Average number of candidates per spectrum-charge combination: 1922.031616 
+INFO: Elapsed time: 8.28 s
+INFO: Finished crux tide-search.
+INFO: Return Code:0

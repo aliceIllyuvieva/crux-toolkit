@@ -1,0 +1,26 @@
+INFO: CPU: L429746
+INFO: Crux version: 3.2-c0cfc4de
+INFO: Сб апр 11 19:27:16 MSK 2020
+COMMAND LINE: /home/alice/crux-toolkit/src/crux tide-index --missed-cleavages 1 --overwrite T --peptide-list T --max-mods 1 --mods-spec 1M+15.9949 --output-dir /home/alice/crux-toolkit/crux_test/UPS1_IDX /home/data/Fasta/ups1.fasta /home/alice/crux-toolkit/crux_test/UPS1_IDX
+INFO: Beginning tide-index.
+INFO: Running tide-index...
+WARNING: The file '/home/alice/crux-toolkit/crux_test/UPS1_IDX/tide-index.peptides.target.txt' already exists and will be overwritten.
+WARNING: The file '/home/alice/crux-toolkit/crux_test/UPS1_IDX/tide-index.peptides.decoy.txt' already exists and will be overwritten.
+WARNING: The output directory '/home/alice/crux-toolkit/crux_test/UPS1_IDX' already exists.
+Existing files will be overwritten.
+INFO: Reading /home/data/Fasta/ups1.fasta and computing unmodified peptides...
+INFO: Ignoring 11 peptide sequences containing unrecognized characters.
+INFO: Generated 32986 targets, including duplicates.
+INFO: Failed to generate decoys for 1 low complexity peptides.
+INFO: Generated 10827 decoys.
+INFO: Generating 1 decoy per target
+INFO: Reading proteins
+INFO: Skipped 22158 duplicate targets and 0 duplicate decoys.
+INFO: Wrote 10828 targets and 10827 decoys.
+INFO: Computing modified peptides...
+INFO: Created 28629 peptides.
+INFO: Writing peptide lists...
+INFO: Precomputing theoretical spectra...
+INFO: Elapsed time: 0.292 s
+INFO: Finished crux tide-index.
+INFO: Return Code:0
