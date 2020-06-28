@@ -2130,10 +2130,6 @@ int TideSearchApplication::calcScoreCount(
 
 		void TideSearchApplication::CalculateQValuesTDC(SpectrumCollection* spectra) {          //added by Alice
 
-
-		  
-			
-
 		  double target_cnt;
 		  double decoy_cnt;
 
@@ -2147,11 +2143,7 @@ int TideSearchApplication::calcScoreCount(
 		  spectra->Sort<ScSortByBestScore>(ScSortByBestScore());
 		  vector<SpectrumCollection::SpecCharge>* spec_charges(&spectra->spec_charges_);
 
-		  
-
-
-
-	 
+		 	 
 		 for (vector<SpectrumCollection::SpecCharge>::const_iterator sc = spec_charges->begin();
 			   sc < spec_charges->end(); ++sc) {
 	     
@@ -2175,13 +2167,13 @@ int TideSearchApplication::calcScoreCount(
 				fdr = 1.0;
 			}	
 		       }
-		       
-		      
+		       		      
 		       spectrum->GetQValue();
-/*
+
+
                        spectrum->SetQValue(fdr);
 		       
-		       if (spectrum->GetQValue() < saved_element->GetQValue()){
+		      /* if (spectrum->GetQValue() < saved_element->GetQValue()){
 			       double temporaryVar;
 			       temporaryVar = spectrum->GetQValue();
 			       saved_element->GetQValue();
@@ -2191,8 +2183,7 @@ int TideSearchApplication::calcScoreCount(
 		       saved_element = spectrum;
 
 */		       
-		     
-		      
+		
 		       printf("Spectra scan:\t%d, \tscore; \t%lf, \tqvalue; \t%lf, \ttarget/decoy:\t%s\n",spectrum->SpectrumNumber(),spectrum->GetBestScore(),spectrum->GetQValue(), spectrum->GetTarget()?"target" : "decoy"); 
 
                spectrum = NULL;

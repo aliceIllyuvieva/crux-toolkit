@@ -1,6 +1,6 @@
 INFO: CPU: L429746
-INFO: Crux version: 3.2-c0cfc4de
-INFO: Сб июн 27 23:10:17 MSK 2020
+INFO: Crux version: 3.2-d99d919c
+INFO: Вс июн 28 14:24:55 MSK 2020
 COMMAND LINE: /home/alice/crux-toolkit/src/crux assign-confidence --overwrite T --output-dir /home/alice/crux-toolkit/crux_test/UPS1_BASELINE_LR /home/alice/crux-toolkit/crux_test/UPS1_BASELINE_LR/tide-search.txt
 INFO: Beginning assign-confidence.
 INFO: Estimation method = tdc.
@@ -15,6 +15,6 @@ INFO: Number of PSMs at 10% FDR = 691.
 WARNING: No modification identifier found for mass shift 15.99.
 Warning Suppressed, others may exist
 INFO: Creating modification for 15.990000
-INFO: Elapsed time: 0.24 s
+INFO: Elapsed time: 0.241 s
 INFO: Finished crux assign-confidence.
 INFO: Return Code:0
